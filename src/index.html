@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Back to the 20th century</title> 
+  <link rel="shortcut icon" href="..\images\icono.ico">
+  <link rel="stylesheet" type="text/css" href="style.css" media="screen"> 
+  <link href="https://fonts.googleapis.com/css?family=Sniglet" rel="stylesheet">
+</head>
+<body>
+    
+  <nav class="header">   
+    <div>
+      <input type="search" id="miBusqueda" class="barraBusqueda">
+      <button>Buscar</button>
+    </div>
+    
+  </nav>
+
+  <section>
+    <div class="slider">
+          <ul>
+            <li>
+      <img src="https://i.postimg.cc/HsGHv30b/prettyw.png" alt="">
+     </li>
+            <li>
+      <img src="https://i.postimg.cc/t4XK8csn/titanic-movie-promo-stills-wallpaper-4.jpg" alt="">
+    </li>
+            <li>
+      <img src="https://i.postimg.cc/J7HMQSX1/back-to-the-future-trilogy-1122951-1280x0.jpg" alt="">
+    </li>
+            <li>
+      <img src="https://i.postimg.cc/t4XK8csn/titanic-movie-promo-stills-wallpaper-4.jpg" alt="">
+    </li>
+          </ul>
+    </div>
+
+  </section>
+
+  <main class="wrapper">
+    <aside class="lateral-content" >
+      <div class="sticky">
+        <div>
+          <h6>Género</h6>
+          <nav>
+            <li><input type="radio" id="sort-asc">Drama</input></li>
+            <li><input type="radio" id="sort-des" >Comedia</input></li>
+            <li><input type="radio" >Ficción</input></li>
+          </nav>
+        </div>
+        <div>
+          <h6>Década</h6>
+          <nav>
+            <li><input type="radio" >60's</input></li>
+            <li><input type="radio" >70's</input></li>
+            <li><input type="radio" >80's</input></li>
+            <li><input type="radio" >90's</input></li>
+          </nav>
+        </div>
+      </div>
+    </aside>
+   
+    <div id="pkList" class="pokelist"></div>
+  </main>
+      <footer id="footer_page" class="bottom_page">
+      </footer>
+    
+    <script src="data.js"></script>
+    <script src="./data/pokemon/pokemon.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

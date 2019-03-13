@@ -1,0 +1,152 @@
+/*css body */
+body {
+    margin: 0;
+    font-family: 'Sniglet', cursive;
+    background: #DBDDE7;
+}
+
+/* css para header y su contenido*/
+.header {
+    /*min-height: 6.5rem;*/
+    background: #212b41;
+    text-align: right;
+    padding: 3em;
+    height: 1rem;
+}
+
+/* estilos para el carrusel*/
+.slider {
+	width: 100%;
+	margin: auto;
+    overflow: hidden;
+    height: auto;
+}
+
+.slider ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	
+	animation: cambio 10s infinite alternate linear;
+}
+
+.slider li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider img {
+	width: 100%;
+}
+
+@keyframes cambio {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
+
+/*-*/
+
+    
+
+/* Estilos para el wrapper */
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+.lateral-content{
+    flex: 0.6; 
+    position: relative;
+    background: #B0B8A0;
+    min-width: 9.4rem;    
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.sticky{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sticky > div {
+    min-width: 8.75rem;
+    list-style: none;
+}
+
+
+/*css para div de listado pokémon*/
+.pokelist {
+    flex: 4;
+    min-width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.singlePokemon{
+    position: relative;
+    border-radius: 12px;
+    border: solid 2px;
+    border-color: white;
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #7dbcff;
+    margin: 10px 0;
+}
+
+.singlePokemon:hover .overlay {
+    display: block;
+}
+
+.overlay{
+    display: none;
+    position: absolute;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    color: white;
+    font-size: .7em;
+    padding: 5px;
+    border-radius: 12px;
+}
+
+.translucent{
+    background-color: black;
+    opacity: .75;
+}
+.namepk {
+    font-size: 15px;
+}
+/*css para el contenido en primera pantalla*/
+.content{
+    max-width: 100%;
+}
+/*css para footer y su contenido */
+.bottom_page {
+    background: #B0B8A0;
+}
+h3 span {
+    color: white;
+    font-size: 22px;
+    margin-right: 25px;
+}
+
+dt{
+    font-weight: 900;
+}
