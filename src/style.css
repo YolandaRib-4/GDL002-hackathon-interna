@@ -196,3 +196,15 @@ h6{
 p{
     font-size: 1.2em;
 }
+
+.top-page{
+    text-decoration: none;
+    text-align: right;
+    margin: 0rem 3rem 2rem;
+    font-size: 1em;
+    color: #fff;
+}
+
+a:visited{
+    color: #fff;
+}
