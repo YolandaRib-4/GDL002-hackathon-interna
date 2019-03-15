@@ -1,73 +1,113 @@
-/*css body */
+html{
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
-    font-family: 'Sniglet', cursive;
-    background: #DBDDE7;
+    font-family: 'Abel', sans-serif;
+    background: #29043A;
 }
 
-/* css para header y su contenido*/
+/* css para header y su contenido (logo y barra de búsqueda)*/
 .header {
-    /*min-height: 6.5rem;*/
-    background: #212b41;
-    text-align: right;
-    padding: 3em;
-    height: 1rem;
+    min-height: 5rem;
+    min-width: 25rem;
+    background: #2766a4;
+    height: 6rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-/* estilos para el carrusel*/
+.logo{
+    top: 0;
+    left: 0;
+    text-align: left;
+    background-color: #212b41;
+}
+
+.logo-img{
+    padding: 0.3rem 3rem 0rem 1rem;
+    height: 5rem;
+}
+.search{
+    text-align: right;
+    padding: 1rem  1rem 1rem 0;
+}
+
+.barraBusqueda{
+    font-family: 'Abel', sans-serif;
+    font-size: 0.8em; 
+    border-radius: 5px;
+    padding: 0.3rem;
+    border: none;
+}
+
+.header button{
+    height: 2rem;
+    background: none;
+    color: #fff;
+    border-radius: 2px;
+}
+
+/* css para slider y su contenido (imágenes)*/
 .slider {
+    min-width: 25rem;
 	width: 100%;
-	margin: auto;
-    overflow: hidden;
     height: auto;
+	margin: 0;
+    background-color: #2f234d;
+    overflow: hidden;
 }
 
 .slider ul {
 	display: flex;
 	padding: 0;
-	width: 400%;
-	
-	animation: cambio 10s infinite alternate linear;
+	width: 500%;
+	animation: cambio 40s infinite alternate linear;
 }
 
 .slider li {
 	width: 100%;
-	list-style: none;
+
 }
 
 .slider img {
 	width: 100%;
 }
 
-@keyframes cambio {
-	0% {margin-left: 0;}
-	20% {margin-left: 0;}
-	
-	25% {margin-left: -100%;}
-	45% {margin-left: -100%;}
-	
-	50% {margin-left: -200%;}
-	70% {margin-left: -200%;}
-	
-	75% {margin-left: -300%;}
-	100% {margin-left: -300%;}
+.imagen{
+    height: auto;
 }
 
 
-/*-*/
-
+@keyframes cambio {
+	0% {margin-left: 0;}
+	15% {margin-left: 0;}
+	
+	20% {margin-left: -100%;}
+	35% {margin-left: -100%;}
+	
+	40% {margin-left: -200%;}
+	55% {margin-left: -200%;}
+	
+	60% {margin-left: -300%;}
+	80% {margin-left: -300%;}
     
+    85% {margin-left: -400%;}
+    100% {margin-left: -400%;}
 
-/* Estilos para el wrapper */
+}
+/* css para barra lateral y su contenido (botones de filtrado)*/
 .wrapper {
     display: flex;
     flex-wrap: wrap;
 }
 .lateral-content{
-    flex: 0.6; 
+    flex: 1; 
     position: relative;
-    background: #B0B8A0;
-    min-width: 9.4rem;    
+    background: #FF4D0C;
+    min-width: 10rem;    
     position: sticky;
     top: 0;
     z-index: 1;
@@ -76,7 +116,7 @@ body {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    padding: 2.5rem;
+    padding: 1.5rem;
     display: flex;
     flex-wrap: wrap;
 }
@@ -84,69 +124,76 @@ body {
 .sticky > div {
     min-width: 8.75rem;
     list-style: none;
+    color: #e7d3ab;
 }
 
-
-/*css para div de listado pokémon*/
-.pokelist {
-    flex: 4;
-    min-width: 400px;
+h6{
+    font-size: 1.3em;
+}
+/* css para sección de películas y su contenido (posters)*/
+.film-list {
+    flex: 5;
+    min-width: 20rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
-.singlePokemon{
+
+.poster{
+     height: 18rem;
+     border: solid 3px;
+     border-color: #FFE548;
+}
+
+.sinopsis{
+    padding: 0.8rem;
+    font-size: 1em;
+}
+/* css para "voltear" posters (mostrar sinopsis)*/
+.flip-card{
+    width: 15rem;
+    height: 18rem;
+    text-align:center;
+    margin: 5% 1%;
     position: relative;
-    border-radius: 12px;
-    border: solid 2px;
-    border-color: white;
-    width: 180px;
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
-    background-color: #7dbcff;
-    margin: 10px 0;
+    align-self: center;
+    background-color: transparent;
+    perspective: 1000px;
 }
 
-.singlePokemon:hover .overlay {
-    display: block;
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
 }
 
-.overlay{
-    display: none;
+.movies-flip-front, .movies-flip-back {
+    width: 100%;
+    height: 100%;
     position: absolute;
-    top:0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    color: white;
-    font-size: .7em;
-    padding: 5px;
-    border-radius: 12px;
+  backface-visibility: hidden;
 }
 
-.translucent{
-    background-color: black;
-    opacity: .75;
-}
-.namepk {
-    font-size: 15px;
-}
-/*css para el contenido en primera pantalla*/
-.content{
-    max-width: 100%;
-}
-/*css para footer y su contenido */
-.bottom_page {
-    background: #B0B8A0;
-}
-h3 span {
-    color: white;
-    font-size: 22px;
-    margin-right: 25px;
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
 }
 
-dt{
-    font-weight: 900;
+.movies-flip-front {
+  z-index: 2;
 }
+.movies-flip-back {
+    background-color: #FFE548;
+    transform: rotateY(180deg);
+    z-index: 1;
+}
+
+p{
+    font-size: 1.2em;
+}
+
