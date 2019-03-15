@@ -45,4 +45,6 @@ Se realizó una encuesta a 30 personas para determinar los géneros seleccionado
 
 La idea principal sobre la cual trabajamos, fué una single page con una barra de navegación que permitiría una busqueda de películas por nombre, un slider con imágenes alusivas a las películas que pueden ser encontradas en el sitio web, asi como los filtros con diferentes opciones al lado izquierdo de la pantalla y a su vez un catálogo preliminar. 
 
+![Imagen para prototipado baja fidelidad](https://github.com/YolandaRib-4/GDL002-hackathon-interna/blob/master/images/prototipo-baja-fidelidad.jpg)
+
 ### Prototipado de alta fidelidad
