@@ -1,3 +1,4 @@
+
 // Son los ids de las peliculas localizadas en la pagina Imdb
 const dataMovies = ["tt0120338","tt0100405","tt0107290","tt0119738","tt0099487","tt0110912","tt0109830","tt0133093",
 "tt0099785","tt0099653", "tt0088247", "tt0088763","tt0082971","tt0081505","tt0083866","tt0087332","tt0094721",
@@ -15,6 +16,7 @@ function filterDecade(movies,decade){
 
 // Esta funcion permite filtrar las peliculas por genero
 // genero se tomara mediante el main con la ayuda del radio que elija el usuario
+
 function filterGenre(movies, genero){
      const arrType = [];
      for(let i = 0; i < movies.length; i++){
@@ -24,6 +26,7 @@ function filterGenre(movies, genero){
 }
  return arrType;
 };
+
 //La funcion se utiliza en la barra de busqueda para que el usuario pueda encontrar el titulo de alguna pelicula
 function filterItems(movies,query) {
 return movies.filter(function(el) {
@@ -31,6 +34,7 @@ return movies.filter(function(el) {
 })
 };
 //engloba la base de datos en la variable movies y les da la promeso a cada funcion utilizada
+
 const movies=[];
 for (let i=0; i < dataMovies.length; i++){
  fetch("http://www.omdbapi.com/?i=" + dataMovies[i] + "&apikey=5fc360b0").then((data)=>{
