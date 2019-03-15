@@ -10,6 +10,7 @@ function moviePosterTemplate(movies){
 				<div class="movies-flip-back">
 					<p>${movies.Title} / ${movies.Year}</p>
 					<p class="sinopsis">Plot: ${movies.Plot} <br> Duration: ${movies.Runtime}</p>
+					<p class="show-movie">Watch Movie<p>
 				</div>
 			</div>
 		</div>
@@ -30,7 +31,7 @@ function showFilter(decade){
 	moviePoster(typeResult);
 	return typeResult;
 }
-
+//Interacción con botones por década que llaman a la función de década
 const m60s = document.getElementById("1960");
 m60s.addEventListener("click", function () {
 	showFilter(m60s);});
@@ -56,7 +57,7 @@ function showFilterGenre(genero){
 	return typeResult;
 }
 
-//Interacción con botones de género que llaman a la función 
+//Interacción con botones por género que llaman a la función de género 
 const comedy = document.getElementById("Comedy");
 comedy.addEventListener("click", function () {
 	showFilterGenre(comedy);});
@@ -83,3 +84,4 @@ function showFilterSearch(query){
 const search = document.getElementById("search-button");
 search.addEventListener("click", function () {
 	showFilterSearch(search);});
+    setTimeout(showFilterSearch, 500);

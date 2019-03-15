@@ -1,64 +1,48 @@
-# "Hackathon" de final de _Common Core_, películas
+# Hackathon: Back to the XX
 
 ## Índice
 
-- [Preámbulo](#preámbulo)
-- [Resumen del proyecto](#resumen-del-proyecto)
-- [Consideraciones generales](#consideraciones-generales)
-- [Objetivos de aprendizaje](#objetivos-de-aprendizaje)
-- [Parte obligatoria](#parte-obligatoria)
-- [Consideraciones técnicas](#consideraciones-técnicas)
+- [Definicion del Producto](#definicion-del-Producto)
+- [Inspiraciónes para definir el producto](#inspiraciónes-para-definir-el-producto)
+- [Planning del proyecto](#planning-del-proyecto)
+- [Roles en el equipo](#roles-en-el-equipo)
+- [Sobre el Research](#sobre-el-research)
+- [Sketches](#sketches)
 
----
+## Definicion del Producto
 
-## Preámbulo
+Back To The XX nace con la idea de ofrecer un sitio web de películas a usuarios de cualquier rango de edad que deseen disfrutar de peliculas clásicas porque quieren recordar o también por recomendación de algun amigo, familiar o simplemente curiosidad del cine de la época que incluso muchas de estas películas son considerados como iconos de la cultura popular actualmente.
 
-Con la aparición de plataformas para ver películas en la nube, como Netflix o
-Amazon Prime Video, ver películas desde donde estés, comiendo lo que quieras
-(sin tener que pagar precios ridículos por palomitas), parando si es necesario, teniendo acceso a una cantidad
-abrumadora de películas... ha cambiado la experiencia del usuario
-y modificado el mercado de las películas a nivel global.
+Nuestra propuesta a corto plaza es presentar un sitio web de películas clásicas que permita hacer busqueda por nombre, filtrar por décadas y género, que a su vez, permita darse una idea rápida de si es la película que se desea ver o no, sólo posicionando el mousse sobre el poster para acceder a la informacion sin tener que clickear e ir a otra página para ver sinapsis y tener que regresar al catálogo en caso de querer continuar buscando.
 
-![Pelis](https://media.giphy.com/media/NipFetnQOuKhW/giphy.gif)
+### Inspiraciónes para definir el producto
 
-## Resumen del proyecto
+- La paleta de colores utilizada esta inspirada en colores distintivo de los años 80's.
 
-Durante estos días crearás el producto que quieras alrededor del mundo
-de las películas. Puede ser un sitio que hable de las mejores películas
-latinoamericanas, uno que recomiende las películas recién estrenadas en algún servicio de streaming, uno de recomendaciones de películas de terror,
-comedia ... o... ¡lo que quieran!
 
-## Consideraciones generales
+## Planning del proyecto
 
-- Este proyecto se debe resolver en equipos de hasta 4 personas y uno de 3.
-- Usa la API de [OMDB](http://www.omdbapi.com/) (The Open Movie Database).
-- Tiempo para completar el reto: 3 días.
-- Habrán dos presentaciones, una a la mitad de la _hackathon_ y otra al final.
+Definimos historias de usuario en base a pequeñas funcionalidades que fueron sumandose al proyecto.
 
-## Objetivos de aprendizaje
+- El usuario necesita una barra de navegación donde pueda ver el logo de la página y una barra de busqueda para encontrar películas por nombres.
+- El usuario necesita un catálogo preliminar que al entrar en el sitio pueda darse una idea general de las películas disponibles. 
+- El usuario necesita filtrar por décadas para conocer las películas en ese lapso de tiempo.
+- El usuario necesita filtrar por géneros para conocer las películas disponibles en drama, comedia y ficción. 
+- El usuario necesita una vista preliminar de cada película para decidir si desea verla o continuar explorando. 
 
-- Enfrentarte a un reto de corta duración en el que pongas
-  en práctica todo lo aprendido hasta ahora.
-- Que sigas desarrollando tus habilidades de trabajo en equipo. Mientras más
-  personas en un equipo de trabajo, mayor complejidad para: tener un
-  entendimiento común, seguir el flujo de trabajo, buscar consensos, etc.
+## Roles en el equipo
 
-## Parte Obligatoria
+- Belén y Sofía: Se encargaron de la funcionalidad con el Js, desarrollaron las funciones para filtrar películas por decadas, por géneros, implementaron la utilizacion del fetch para utilizacion la API DE [OMDB].
+- Galilea y Yolanda: Desarrollaron el HTML y Css, implementando Flex-Box para crear el sitio responsive, asi como la seleccion de colores y elementos gráficos del sitio.  
 
-- Todo el planeamiento del trabajo deberá ser detallado en un repositorio único
-  por _squad_ en el que se presente el _planning_, el _research_, los _sketches_
-  y las inspiraciones utilizadas para definir el producto.
-- Además, deberás detallar en el archivo _readme_, qué hizo cada una en el
-  proyecto.
-- El producto deberá presentarse publicado en github pages.
+## Sobre el Research
 
-## Consideraciones técnicas
+Se realizó una encuesta a 30 personas para determinar los géneros seleccionados, en la cual resultó que los géneros de películas mas populares para la búsqueda de entretenimiento es comedia, drama y ficción.
 
-- El diseño visual de los componentes es de libre elección.
-- Pueden usar algún framework de css si así lo deciden.
+## Sketches
 
-## Sobre las presentaciones
+### Prototipado de baja fidelidad
 
-- Cada squad tendrá 5 minutos para presentar y 5 minutos para recibir preguntas.
+La idea principal sobre la cual trabajamos, fué una single page con una barra de navegación que permitiría una busqueda de películas por nombre, un slider con imágenes alusivas a las películas que pueden ser encontradas en el sitio web, asi como los filtros con diferentes opciones al lado izquierdo de la pantalla y a su vez un catálogo preliminar. 
 
-- Las personas que presentan en la primera presentación no deben ser las mismas de la presentación final.
+### Prototipado de alta fidelidad

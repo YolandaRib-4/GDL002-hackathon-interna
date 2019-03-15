@@ -27,12 +27,12 @@ body {
 }
 
 .logo-img{
-    padding: 0.3rem 4rem 0rem 1rem;
+    padding: 0.3rem 3rem 0rem 1rem;
     height: 5rem;
 }
 .search{
     text-align: right;
-    padding: 1rem;
+    padding: 1rem  1rem 1rem 0;
 }
 
 .barraBusqueda{
@@ -149,6 +149,17 @@ h6{
     padding: 0.8rem;
     font-size: 1em;
 }
+
+.show-movie{
+    font-size: 0.9em;
+    color: #C90A2D;
+    text-decoration: underline;
+}
+
+.show-movie:hover{
+    cursor: pointer;
+}
+
 /* css para "voltear" posters (mostrar sinopsis)*/
 .flip-card{
     width: 15rem;
@@ -177,15 +188,15 @@ h6{
     width: 100%;
     height: 100%;
     position: absolute;
-  backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
 .flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
+    transform: rotateY(180deg);
 }
 
 .movies-flip-front {
-  z-index: 2;
+    z-index: 2;
 }
 .movies-flip-back {
     background-color: #FFE548;
