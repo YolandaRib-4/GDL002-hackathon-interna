@@ -1,6 +1,6 @@
 # Hackathon: Back to the XX
 
-## Índice
+## Índice:
 
 - [Definicion del Producto](#definicion-del-Producto)
 - [Inspiraciónes para definir el producto](#inspiraciónes-para-definir-el-producto)
