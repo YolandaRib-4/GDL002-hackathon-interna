@@ -46,7 +46,7 @@ return movies.filter(function(el) {
 
 const movies=[];
 for (let i=0; i < dataMovies.length; i++){
- fetch("http://www.omdbapi.com/?i=" + dataMovies[i] + "&apikey=5fc360b0").then((data)=>{
+ fetch("https://www.omdbapi.com/?i=" + dataMovies[i] + "&apikey=5fc360b0").then((data)=>{
    return data.json();
  }).then((dataAsJSON)=>{
    movies.push(dataAsJSON);
