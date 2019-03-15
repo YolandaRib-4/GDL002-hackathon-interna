@@ -1,0 +1,199 @@
+html{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Abel', sans-serif;
+    background: #29043A;
+}
+
+/* css para header y su contenido (logo y barra de búsqueda)*/
+.header {
+    min-height: 5rem;
+    min-width: 25rem;
+    background: #2766a4;
+    height: 6rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo{
+    top: 0;
+    left: 0;
+    text-align: left;
+    background-color: #212b41;
+}
+
+.logo-img{
+    padding: 0.3rem 3rem 0rem 1rem;
+    height: 5rem;
+}
+.search{
+    text-align: right;
+    padding: 1rem  1rem 1rem 0;
+}
+
+.barraBusqueda{
+    font-family: 'Abel', sans-serif;
+    font-size: 0.8em; 
+    border-radius: 5px;
+    padding: 0.3rem;
+    border: none;
+}
+
+.header button{
+    height: 2rem;
+    background: none;
+    color: #fff;
+    border-radius: 2px;
+}
+
+/* css para slider y su contenido (imágenes)*/
+.slider {
+    min-width: 25rem;
+	width: 100%;
+    height: auto;
+	margin: 0;
+    background-color: #2f234d;
+    overflow: hidden;
+}
+
+.slider ul {
+	display: flex;
+	padding: 0;
+	width: 500%;
+	animation: cambio 40s infinite alternate linear;
+}
+
+.slider li {
+	width: 100%;
+
+}
+
+.slider img {
+	width: 100%;
+}
+
+.imagen{
+    height: auto;
+}
+
+
+@keyframes cambio {
+	0% {margin-left: 0;}
+	15% {margin-left: 0;}
+	
+	20% {margin-left: -100%;}
+	35% {margin-left: -100%;}
+	
+	40% {margin-left: -200%;}
+	55% {margin-left: -200%;}
+	
+	60% {margin-left: -300%;}
+	80% {margin-left: -300%;}
+    
+    85% {margin-left: -400%;}
+    100% {margin-left: -400%;}
+
+}
+/* css para barra lateral y su contenido (botones de filtrado)*/
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+.lateral-content{
+    flex: 1; 
+    position: relative;
+    background: #FF4D0C;
+    min-width: 10rem;    
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.sticky{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sticky > div {
+    min-width: 8.75rem;
+    list-style: none;
+    color: #e7d3ab;
+}
+
+h6{
+    font-size: 1.3em;
+}
+/* css para sección de películas y su contenido (posters)*/
+.film-list {
+    flex: 5;
+    min-width: 20rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.poster{
+     height: 18rem;
+     border: solid 3px;
+     border-color: #FFE548;
+}
+
+.sinopsis{
+    padding: 0.8rem;
+    font-size: 1em;
+}
+/* css para "voltear" posters (mostrar sinopsis)*/
+.flip-card{
+    width: 15rem;
+    height: 18rem;
+    text-align:center;
+    margin: 5% 1%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-self: center;
+    background-color: transparent;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.movies-flip-front, .movies-flip-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  backface-visibility: hidden;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.movies-flip-front {
+  z-index: 2;
+}
+.movies-flip-back {
+    background-color: #FFE548;
+    transform: rotateY(180deg);
+    z-index: 1;
+}
+
+p{
+    font-size: 1.2em;
+}
+
