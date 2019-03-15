@@ -21,18 +21,31 @@ function moviePoster (data){
 	${data.map(moviePosterTemplate).join("")}`;
 }
 
+
 //Función para filtrar por década
-function showFilter(movies){
+function showFilter(decade){
 	let divMoviesList = document.getElementById('movie-list');
 	divMoviesList.innerHTML = "";
-	const typeResult =filter70Movies(movies);
+	const typeResult =filterDecade(movies, parseInt(decade.value));
 	moviePoster(typeResult);
 	return typeResult;
 }
 
-const m70s = document.getElementById("d70s");
+const m60s = document.getElementById("1960");
+m60s.addEventListener("click", function () {
+	showFilter(m60s);});
+
+const m70s = document.getElementById("1970");
 m70s.addEventListener("click", function () {
-	showFilter(movies);});
+	showFilter(m70s);});
+
+const m80s = document.getElementById("1980");
+m80s.addEventListener("click", function () {
+	showFilter(m80s);});
+
+const m90s = document.getElementById("1990");
+m90s.addEventListener("click", function () {
+	showFilter(m90s);});
 
 //Función general para filtrar por género
 function showFilterGenre(genero){
@@ -55,3 +68,18 @@ drama.addEventListener("click", function () {
 const sciFi = document.getElementById("Sci-Fi");
 sciFi.addEventListener("click", function () {
 	showFilterGenre(sciFi);});
+
+
+//Función para buscar
+function showFilterSearch(query){
+	let divMoviesList = document.getElementById('movie-list');
+	divMoviesList.innerHTML = "";
+	const name = document.getElementById("miBusqueda").value;
+	const typeResult =filterItems(movies, name);
+	moviePoster(typeResult);
+	return typeResult;
+}
+
+const search = document.getElementById("search-button");
+search.addEventListener("click", function () {
+	showFilterSearch(search);});
