@@ -51,9 +51,9 @@ La idea principal sobre la cual trabajamos, fué una single page con una barra d
 
 ![Imagen para prototipado alta fidelidad](https://github.com/YolandaRib-4/GDL002-hackathon-interna/blob/master/images/prototipo%20alta%20fidelidad%20HACKTAHON.png)
 
-Aquí mostramos la liga para acceder al prototipado en Figma.
+ Aquí mostramos la liga para acceder al prototipado en Figma.
 [Figma](https://www.figma.com/file/eWCFWspiS677fnWUsUjuWOgo/Untitled?node-id=0%3A1) 
 
-Aquí mostramos la liga para acceder a la presentacion del prototipado en Figma.
+ Aquí mostramos la liga para acceder a la presentacion del prototipado en Figma.
 [Figma](https://www.figma.com/file/eWCFWspiS677fnWUsUjuWOgo/Untitled?node-id=0%3A1) 
 
