@@ -48,3 +48,5 @@ La idea principal sobre la cual trabajamos, fué una single page con una barra d
 ![Imagen para prototipado baja fidelidad](https://github.com/YolandaRib-4/GDL002-hackathon-interna/blob/master/images/prototipo-baja-fidelidad.jpg)
 
 ### Prototipado de alta fidelidad
+
+![Imagen para prototipado alta fidelidad](https://github.com/YolandaRib-4/GDL002-hackathon-interna/blob/master/images/prototipo-baja-fidelidad.jpg)
