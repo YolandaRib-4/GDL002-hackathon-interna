@@ -1,64 +1,68 @@
 
 <!DOCTYPE html>
 <html lang="es">
-<head>
-	<meta charset="utf-8"> 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Back to the 20th century</title> 
-  <link rel="stylesheet" type="text/css" href="style.css" media="screen"> 
-  <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
-  <link rel="shortcut icon" href="..\images\icono.ico">
-</head>
-<body>
+  <head>
+  	<meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Back to the 20th century</title> 
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen"> 
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+    <link rel="shortcut icon" href="..\images\icono.ico">
+  </head>
+  <body>
     
-  <nav class="header">
-    <div class="logo">
-      <img class="logo-img" src="https://i.postimg.cc/NjrdcBwL/logo.png">
-    </div>
-    <div class="search">
-      <input type="search" id="miBusqueda" class="barraBusqueda">
-      <button id="search-button">SEARCH</button>
-    </div>
-  </nav>
-
-  <section>
-   <div class="slider">
-      <ul>
-        <li><img class="imagen" src="https://i.postimg.cc/xTjsfczx/the-godfather.png" alt=""></li>
-        <li><img class="imagen" src="https://i.postimg.cc/76yVp64N/back-to-the-future.png" alt=""></li>
-        <li><img class="imagen" src="https://i.postimg.cc/GhMXHdPc/home-alone.png" alt=""></li>
-        <li><img class="imagen" src="https://i.postimg.cc/4xqwQPFq/the-shining.png" alt=""></li>
-        <li><img class="imagen" src="https://i.postimg.cc/SK9dT9Bs/titanic.png" alt=""></li>
-      </ul>
-    </div>
-  </section>
-
-  <main class="wrapper">
-    <aside class="lateral-content" >
-      <div class="sticky">
-        <div>
-          <h6>Genre</h6>
-          <nav>
-            <li><input name="check" type="radio" id="Drama" value="Drama" >Drama</input></li>
-            <li><input name="check" type="radio" id="Comedy" value="Comedy" >Comedy</input></li>
-            <li><input name="check" type="radio" id="Sci-Fi" value="Sci-Fi">Sci-Fi</input></li>
-          </nav>
-        </div>
-        <div>
-          <h6>Decade</h6>
-          <nav>
-            <li><input name="years" type="radio" id="1960" value="1960">60's</input></li>
-            <li><input name="years" type="radio" id="1970" value="1970">70's</input></li>
-            <li><input name="years" type="radio" id="1980" value="1980">80's</input></li>
-            <li><input name="years" type="radio" id="1990" value="1990">90's</input></li>
-          </nav>
-        </div>
+    <nav class="header">
+      <div class="logo">
+        <img class="logo-img" src="https://i.postimg.cc/NjrdcBwL/logo.png">
       </div>
-    </aside>
-   
-    <div id="movie-list" class="film-list"></div>
-  </main>
-      
+      <div class="search">
+        <input type="search" id="miBusqueda" class="barraBusqueda">
+       <a href="#list"><button id="search-button">SEARCH</button></a>
+      </div>
+    </nav>
+  
+      <section>
+       <div class="slider">
+          <ul>
+            <li><img class="imagen" src="https://i.postimg.cc/xTjsfczx/the-godfather.png" alt=""></li>
+            <li><img class="imagen" src="https://i.postimg.cc/76yVp64N/back-to-the-future.png" alt=""></li>
+            <li><img class="imagen" src="https://i.postimg.cc/GhMXHdPc/home-alone.png" alt=""></li>
+            <li><img class="imagen" src="https://i.postimg.cc/4xqwQPFq/the-shining.png" alt=""></li>
+            <li><img class="imagen" src="https://i.postimg.cc/SK9dT9Bs/titanic.png" alt=""></li>
+          </ul>
+        </div>
+      </section>
+  
+      <main class="wrapper">
+        <aside class="lateral-content" >
+          <a name="list"></a>
+          <div class="sticky">
+            <div>
+              <h6>Genre</h6>
+              <nav>
+                <li><input name="check" type="radio" id="Drama" value="Drama" >Drama</input></li>
+                <li><input name="check" type="radio" id="Comedy" value="Comedy" >Comedy</input></li>
+                <li><input name="check" type="radio" id="Sci-Fi" value="Sci-Fi">Sci-Fi</input></li>
+              </nav>
+            </div>
+            <div>
+              <h6>Decade</h6>
+              <nav>
+                <li><input name="years" type="radio" id="1990" value="1990">90's</input></li>
+                <li><input name="years" type="radio" id="1980" value="1980">80's</input></li>
+                <li><input name="years" type="radio" id="1970" value="1970">70's</input></li>
+                <li><input name="years" type="radio" id="1960" value="1960">60's</input></li>
+              </nav>
+            </div>
+          </div>
+        </aside>
+       
+        <div id="movie-list" class="film-list"></div>
+      </main>
+
+    <footer class="top-page">
+      <nav><a href="#Top">To Top</a></nav>
+    </footer>
     
     <script src="data.js"></script>
     <script src="main.js"></script>
